@@ -19,6 +19,7 @@ jobs:
 
     env:
       DEBUG: True
+      USE_SQLITE: True
       GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
       GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
       EMAIL_HOST_USER: ${{ secrets.EMAIL_HOST_USER }}
