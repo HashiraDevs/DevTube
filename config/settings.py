@@ -194,6 +194,10 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+# Google OAuth settings.
+GOOGLE_CLIENT_ID = config("GOOGLE_CLIENT_ID")
+GOOGLE_CLIENT_SECRET = config("GOOGLE_CLIENT_SECRET")
+
 # Email settings
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
