@@ -23,4 +23,5 @@ urlpatterns = [
     path("auth/", include("dj_rest_auth.urls")),
     # dj-rest-auth registration endpoints
     path("auth/registration/", include("dj_rest_auth.registration.urls")),
+	path('accounts/', include('accounts.urls')),
 ]
