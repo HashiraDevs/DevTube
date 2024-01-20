@@ -1,8 +1,11 @@
+from django.urls import include, path   
 from django.urls import include, path
 from django.views.generic import TemplateView
 from . import views
 
+
 urlpatterns = [
+
     # dj-rest-auth common endpoints
     path("auth/", include("dj_rest_auth.urls")),
     # dj-rest-auth registration endpoints
